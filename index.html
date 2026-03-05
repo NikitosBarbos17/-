@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Каталог навчальних ресурсів</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Каталог навчальних ресурсів</h1>
+
+<div class="container">
+
+<form id="resourceForm">
+
+<h2>Додати ресурс</h2>
+
+<label for="title">Назва ресурсу</label>
+<input type="text" id="title">
+
+<div class="error" id="titleError"></div>
+
+<label for="url">URL</label>
+<input type="url" id="url">
+
+<div class="error" id="urlError"></div>
+
+<label for="type">Тип ресурсу</label>
+<select id="type">
+<option value="">Оберіть</option>
+<option>Відео</option>
+<option>Стаття</option>
+<option>Курс</option>
+<option>Книга</option>
+</select>
+
+<div class="error" id="typeError"></div>
+
+<label for="description">Опис</label>
+<textarea id="description"></textarea>
+
+<div class="error" id="descriptionError"></div>
+
+<label for="author">Автор</label>
+<input type="text" id="author">
+
+<div class="error" id="authorError"></div>
+
+<button type="submit">Додати ресурс</button>
+
+</form>
+
+
+<div class="tableSection">
+
+<h2>Список ресурсів</h2>
+
+<input type="text" id="search" placeholder="Пошук ресурсу">
+
+<table>
+
+<thead>
+<tr>
+<th>Назва</th>
+<th>URL</th>
+<th>Тип</th>
+<th>Опис</th>
+<th>Автор</th>
+<th>Дії</th>
+</tr>
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
